@@ -14,6 +14,11 @@
                 首頁
             </a>
         </div>
+        <div id="6" class="label">
+            <a class="a">
+                介紹
+            </a>
+        </div>
         <div id="2" class="label">
             <a class="a">
                 影片
@@ -51,9 +56,8 @@
     <script>
         const darkblue = "#0399c6"
         const center = window.innerWidth / 2
-        $(() =>{
-            $("#title").css({"margin-left":center - 50 + "px",
-        })
+        $(() => {if (window.innerWidth > 1000){
+        $("#title").css({"margin-left":center - 50 + "px"})
         $("body").css({
             "background-color":"#8de2fc",
             "font-size":"large",
@@ -71,7 +75,7 @@
             "position":"relative",
             "left":"5px"})
             $("#1").click(() => {
-                window.location.href = "./homr.html"
+                window.location.href = "./home.html"
             })
             $("#2").click(() => {
                 window.location.href = "./video.html"
@@ -84,6 +88,9 @@
             })
             $("#5").click(() => {
                 window.location.href = "https://discord.gg/bbwywQ"
+            })
+            $("#6").click(() => {
+                window.location.href = "./introduction.html"
             })
             $("#1").mousemove((e) =>{
                 $("#1").css("background-color","#d1f2fc")
@@ -115,9 +122,91 @@
             $("#5").mouseleave((e) => {
                 $("#5").css("background-color",darkblue)
             })
+            $("#6").mousemove((e) =>{
+                $("#6").css("background-color","#d1f2fc")
+            })
+            $("#6").mouseleave((e) => {
+                $("#6").css("background-color",darkblue)
+            })
             $(".view").css({"margin-left":"350px",
             "border":"1px solid black"})
-            $(".text").css({"margin-left":center - 250 + "px"})
+            $(".text").css({"margin-left":center - 250 + "px"})}
+            else{
+            $("#title").css({"margin-left":center - 50 + "px"})
+            $("body").css({
+                "background-color":"#8de2fc",
+                "font-size":"large",
+                "font-family":"\"Ubuntu Mono\", monospace",
+            })
+            $("nav").css({"display":"flex",
+            "height":"50px",
+            "background":"#0399c6",
+            "width": window.innerWidth - 10 +"px"})
+            $(".label").css({"background-color":darkblue,
+            "height":"50px",
+            "width":"70px",
+            "margin-left":"10px"})
+            $(".a").css({"top":"10px",
+            "position":"relative",
+            "left":"5px"})
+            $("#1").click(() => {
+                window.location.href = "./home.html"
+            })
+            $("#2").click(() => {
+                window.location.href = "./video.html"
+            })
+            $("#3").click(() => {
+                window.location.href = "https://www.youtube.com/channel/UCwH86hhZ5_CDdvBuIsT-Cgg"
+            })
+            $("#4").click(() => {
+                window.location.href = "./blog.html"
+            })
+            $("#5").click(() => {
+                window.location.href = "https://discord.gg/bbwywQ"
+            })
+            $("#6").click(() => {
+                window.location.href = "./introduction.html"
+            })
+            $("#1").mousemove((e) =>{
+                $("#1").css("background-color","#d1f2fc")
+            })
+            $("#1").mouseleave((e) => {
+                $("#1").css("background-color",darkblue)
+            })
+            $("#2").mousemove((e) =>{
+                $("#2").css("background-color","#d1f2fc")
+            })
+            $("#2").mouseleave((e) => {
+                $("#2").css("background-color",darkblue)
+            })
+            $("#3").mousemove((e) =>{
+                $("#3").css("background-color","#d1f2fc")
+            })
+            $("#3").mouseleave((e) => {
+                $("#3").css("background-color",darkblue)
+            })
+            $("#4").mousemove((e) =>{
+                $("#4").css("background-color","#d1f2fc")
+            })
+            $("#4").mouseleave((e) => {
+                $("#4").css("background-color",darkblue)
+            }) 
+            $("#5").mousemove((e) =>{
+                $("#5").css("background-color","#d1f2fc")
+            })
+            $("#5").mouseleave((e) => {
+                $("#5").css("background-color",darkblue)
+            })
+            $("#6").mousemove((e) =>{
+                $("#6").css("background-color","#d1f2fc")
+            })
+            $("#6").mouseleave((e) => {
+                $("#6").css("background-color",darkblue)
+            })
+            $(".view").css({"margin-left":"350px",
+            "border":"1px solid black"})
+            $(".text").css({"margin-left":"0px",
+            "width":"370px"})}
         })
     </script>
 </body>

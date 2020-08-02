@@ -14,6 +14,11 @@
                 首頁
             </a>
         </div>
+        <div id="6" class="label">
+            <a class="a">
+                介紹
+            </a>
+        </div>
         <div id="2" class="label">
             <a class="a">
                 影片
@@ -35,19 +40,6 @@
             </a>
         </div>
     </nav>
-    <h1>靈魂鯊</h1>
-    <img src="resource/image/靈魂鯊.jpg"></img>
-    <h3 id="taiwanese">
-        台灣人
-    </h3>
-        <div id="des">
-            <h3>
-                目標： 100訂閱2020年1月19號 200訂閱2020年4月11號 300訂閱 (懶得打了) 300訂閱有回饋還有Q&A喔
-            </h3>
-            <h3>
-                剪接師：OneEason 起司 雨神 縮圖師：OneEason  Yuki優琪  起司 小靜番茄 合作、工商、業配：h97070311@gmail.com
-            </h3>
-        </div>
     <script>
         const darkblue = "#0399c6"
         const center = window.innerWidth / 2
@@ -88,6 +80,9 @@
             $("#5").click(() => {
                 window.location.href = "https://discord.gg/bbwywQ"
             })
+            $("#6").click(() => {
+                window.location.href = "./introduction.html"
+            })
             $("#1").mousemove((e) =>{
                 $("#1").css("background-color","#d1f2fc")
             })
@@ -117,6 +112,12 @@
             })
             $("#5").mouseleave((e) => {
                 $("#5").css("background-color",darkblue)
+            })
+            $("#6").mousemove((e) =>{
+                $("#6").css("background-color","#d1f2fc")
+            })
+            $("#6").mouseleave((e) => {
+                $("#6").css("background-color",darkblue)
             })
         })
     </script>
